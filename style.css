@@ -1,7 +1,16 @@
-body {
-background-color: #0f172a;
-color: white;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+:root {
+--cordefundo: #0f172a;
+--cordotexto: silver;
+--cordaborda: silver;
+--cordabordadiv: gold;
+--cordabordainput: black;
+--fonteprincipal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+background-color: var(--cordefundo);
+color: var(--cordotexto);
+font-family: var(--fonteprincipal);
 }
 
 h1 {
@@ -17,13 +26,13 @@ p {
 }
 
 img {
-    border: 2px solid white;
+    border: var(--cordaborda);
 }
 
 div {
-    border: 1px solid gray;
+    border: var(--cordabordadiv);
 }
 
 input, textarea, button {
-    border: 4px solid black;
+    border: var(--cordabordainput);
 }
